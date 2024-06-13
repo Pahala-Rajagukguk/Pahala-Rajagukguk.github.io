@@ -132,10 +132,7 @@
                   />
                 </svg>
               </a>
-              <a 
-                href="https://github.com/Pahala-Rajagukguk"
-                class="text-decoration-none" >
-                <svg
+              <svg
                 id="github-logo"
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
@@ -149,8 +146,6 @@
                   fill="#fff"
                 />
               </svg>
-              </a>
-              
               <a
                 href="https://www.youtube.com/channel/UCzb3ktplF4YM-j4xo0rHFFQ"
                 class="text-decoration-none"
@@ -413,17 +408,27 @@
             <div class="col-12 mb-4">
               <h1 class="text-center fw-bold text-light">Portofolio</h1>
               <hr />
+              <!-- Search Input -->
+              <div class="d-flex justify-content-center mb-4">
+                <input
+                  type="text"
+                  class="form-control w-50"
+                  id="portfolioSearch"
+                  placeholder="Search Portfolios..."
+                  onkeyup="searchPortfolio()"
+                />
+              </div>
               <section id="portfolio" class="container mt-5">
                 <div class="row">
                   <!-- Col 4 Item 1 -->
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100 warna1">
+                  <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+                    <div class="card h-100 d-flex flex-column warna1">
                       <img
                         src="img/project/project.png"
                         class="card-img-top"
                         alt="Project 1"
                       />
-                      <div class="card-body">
+                      <div class="card-body flex-grow-1">
                         <h5 class="card-title">
                           Perancangan Sistem Informasi Manajemen dan Evaluasi
                           Pembayaran Berbasis Web
@@ -434,33 +439,43 @@
                           BackEnd : PHP
                         </p>
                       </div>
+                      <div class="card-footer">
+                        <a href="detail1.php" class="btn btn-primary w-100"
+                          >Lihat Detail</a
+                        >
+                      </div>
                     </div>
                   </div>
                   <!-- Col 4 Item 2 -->
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100 warna1">
+                  <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+                    <div class="card h-100 d-flex flex-column warna1">
                       <img
                         src="img/project/youtube.png"
                         class="card-img-top"
                         alt="Project 2"
                       />
-                      <div class="card-body">
+                      <div class="card-body flex-grow-1">
                         <h5 class="card-title">
                           Perancangkan Video Short Movie dengan Tema Narkoba
                         </h5>
                         <p class="card-text">Software : Capcut</p>
                       </div>
+                      <div class="card-footer">
+                        <a href="detail2.php" class="btn btn-primary w-100"
+                          >Lihat Detail</a
+                        >
+                      </div>
                     </div>
                   </div>
                   <!-- Col 4 Item 3 -->
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100 warna1">
+                  <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+                    <div class="card h-100 d-flex flex-column warna1">
                       <img
                         src="img/project/arduino.png"
                         class="card-img-top"
                         alt="Project 3"
                       />
-                      <div class="card-body">
+                      <div class="card-body flex-grow-1">
                         <h5 class="card-title">
                           Perancangan Pendeteksi Gerakan menggunakan Sensor Pir
                           dengan Arduino Uno
@@ -470,51 +485,66 @@
                           Software : Arduino IDE
                         </p>
                       </div>
+                      <div class="card-footer">
+                        <a href="detail3.php" class="btn btn-primary w-100"
+                          >Lihat Detail</a
+                        >
+                      </div>
                     </div>
                   </div>
-                  <!-- Col 4 Item 3 -->
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100 warna1">
+                  <!-- Col 4 Item 4 -->
+                  <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+                    <div class="card h-100 d-flex flex-column warna1">
                       <img
                         src="img/project/Android-studio.jpg"
                         class="card-img-top"
-                        alt="Project 3"
+                        alt="Project 4"
                       />
-                      <div class="card-body">
+                      <div class="card-body flex-grow-1">
                         <h5 class="card-title">
                           Perancangan Aplikasi Registrasi Mahasiswa Menggunakan
                           Android Studio
                         </h5>
                         <p class="card-text">Software : Android Studio</p>
                       </div>
+                      <div class="card-footer">
+                        <a href="detail4.php" class="btn btn-primary w-100"
+                          >Lihat Detail</a
+                        >
+                      </div>
                     </div>
                   </div>
-                  <!-- Col 4 Item 3 -->
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100 warna1">
+                  <!-- Col 4 Item 5 -->
+                  <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+                    <div class="card h-100 d-flex flex-column warna1">
                       <img
                         src="img/project/dotnet.png"
                         class="card-img-top"
-                        alt="Project 3"
+                        alt="Project 5"
                       />
-                      <div class="card-body">
+                      <div class="card-body flex-grow-1">
                         <h5 class="card-title">
                           Perancangan Sistem Pemesanan Coffee Berbasis web
                           menggunakan Framework .NET
                         </h5>
                         <p class="card-text">Software : DotNet</p>
                       </div>
+                      <div class="card-footer">
+                        <a href="detail5.php" class="btn btn-primary w-100"
+                          >Lihat Detail</a
+                        >
+                      </div>
                     </div>
                   </div>
-                  <!-- Col 4 Item 3 -->
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100 warna1">
+                  <!-- Col 4 Item 6 -->
+                  <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+                    <div class="card h-100 d-flex flex-column warna1">
                       <img
                         src="img/project/Networking.jpg"
                         class="card-img-top"
-                        alt="Project 3"
+                        alt="Project 6"
                       />
-                      <div class="card-body">
+                      <div class="card-body flex-grow-1">
                         <h5 class="card-title">
                           Penyelesaikan Problem Jaringan Internet Serta
                           dilakukan Crimping Ulang
@@ -525,6 +555,11 @@
                           Software : Mikrotik <br />
                           Alat - alat : Crimping, RJ 45
                         </p>
+                      </div>
+                      <div class="card-footer">
+                        <a href="detail6.php" class="btn btn-primary w-100"
+                          >Lihat Detail</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -615,7 +650,7 @@
               </svg>
             </a>
             <a
-              href="https://github.com/Pahala-Rajagukguk"
+              href="https://github.com/your-github-username"
               class="text-decoration-none mx-2"
             >
               <svg
@@ -632,7 +667,7 @@
               </svg>
             </a>
             <a
-              href="https://www.instagram.com/ftrpall/"
+              href="https://www.instagram.com/your-instagram-username"
               class="text-decoration-none mx-2"
             >
               <svg
@@ -649,7 +684,7 @@
               </svg>
             </a>
             <a
-              href="https://www.youtube.com/channel/UCzb3ktplF4YM-j4xo0rHFFQ"
+              href="https://www.youtube.com/your-youtube-channel"
               class="text-decoration-none mx-2"
             >
               <svg
@@ -678,5 +713,50 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      // Function to filter portfolio items based on search input
+      function searchPortfolio() {
+        var input, filter, items, cardBody, i, txtValue;
+        input = document.getElementById("portfolioSearch");
+        filter = input.value.toLowerCase();
+        items = document.getElementsByClassName("portfolio-item");
+
+        for (i = 0; i < items.length; i++) {
+          cardBody = items[i].getElementsByClassName("card-body")[0];
+          txtValue = cardBody.textContent || cardBody.innerText;
+          if (txtValue.toLowerCase().indexOf(filter) > -1) {
+            items[i].style.display = "";
+          } else {
+            items[i].style.display = "none";
+          }
+        }
+      }
+
+      // CSS for search input
+      var style = document.createElement("style");
+      style.innerHTML = `
+    .btn-filter {
+      background-color: #378CE7;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s, font-size 0.3s, border-width 0.3s;
+    }
+    .btn-filter:hover {
+      background-color: #2a6db0;
+    }
+    @media (max-width: 576px) {
+      .btn-filter {
+        font-size: 12px;
+        padding: 8px 16px;
+        border-width: 1px;
+      }
+    }
+  `;
+      document.head.appendChild(style);
+    </script>
   </body>
 </html>
